@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EETS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand text-dark" href="#"><img style="width: 200px;" src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-4">
+            <select style="width: 100px;border: navajowhite;box-shadow: 0px 0px 5px 0px #ccc;height: 40px; padding:0px 10px;">
+              <option>English</option>
+              <option>Polski</option>
+              <option>中文</option>
+              <option>日本語</option>
+              <option>Deutsch</option>
+              <option>Français</option>
+              <option>Español</option>
+              <option>Русский</option>
+              <option>Português</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <select style="width: 85px;border: navajowhite;box-shadow: 0px 0px 5px 0px #ccc;height: 40px; padding:0px 10px;">
+              <option>USD</option>
+              <option>XBT</option>
+              <option>EUR</option>
+            </select>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown mr-4">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hotels
+              </a>
+              <!-- <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-dark" href="#">Action</a>
+                <a class="dropdown-item text-dark" href="#">Another action</a>
+                <a class="dropdown-item text-dark" href="#">Something else here</a>
+              </div> -->
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-dark" href="#">
+                <i class="fa-solid fa-heart"></i> Saved
+              </a>
+            </li>
+            <li class="nav-item dropdown mr-4">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-regular fa-life-ring"></i> Support
+              </a>
+              <!-- <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-dark" href="#">Action</a>
+                <a class="dropdown-item text-dark" href="#">Another action</a>
+                <a class="dropdown-item text-dark" href="#">Something else here</a>
+              </div> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-gradient" href="sign-in.html" >
+                SIGN IN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar -->
+  <div class="col-md-12 px-0">
+    <div class=" header-main">
+      <div class="container">
+        <div>
+          <h1 class="text-light" style="font-size: 80px;padding-top: 110px;margin-left: 107px;">Where want you to go?</h1>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 100px;">
+          <div class="tabs">
+            <ul id="tabs-nav">
+              <li class="tab1">
+                <a href="#tab1">
+                  <svg width="25" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                      <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-104.000000, -411.000000)" fill="#000000">
+                        <path d="M116,426 C114.343,426 113,424.657 113,423 C113,421.343 114.343,420 116,420 C117.657,420 119,421.343 119,423 C119,424.657 117.657,426 116,426 L116,426 Z M116,418 C113.239,418 111,420.238 111,423 C111,425.762 113.239,428 116,428 C118.761,428 121,425.762 121,423 C121,420.238 118.761,418 116,418 L116,418 Z M116,440 C114.337,440.009 106,427.181 106,423 C106,417.478 110.477,413 116,413 C121.523,413 126,417.478 126,423 C126,427.125 117.637,440.009 116,440 L116,440 Z M116,411 C109.373,411 104,416.373 104,423 C104,428.018 114.005,443.011 116,443 C117.964,443.011 128,427.95 128,423 C128,416.373 122.627,411 116,411 L116,411 Z" id="location" sketch:type="MSShapeGroup">
+
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Hotels</span>
+                </a>
+              </li>
+              <li class="tab2">
+                <a href="#tab2">
+                  <svg fill="#000000" width="25" viewBox="-2.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M12.382 5.304 10.096 7.59l.006.02L11.838 14a.908.908 0 0 1-.211.794l-.573.573a.339.339 0 0 1-.566-.08l-2.348-4.25-.745-.746-1.97 1.97a3.311 3.311 0 0 1-.75.504l.44 1.447a.875.875 0 0 1-.199.79l-.175.176a.477.477 0 0 1-.672 0l-1.04-1.039-.018-.02-.788-.786-.02-.02-1.038-1.039a.477.477 0 0 1 0-.672l.176-.176a.875.875 0 0 1 .79-.197l1.447.438a3.322 3.322 0 0 1 .504-.75l1.97-1.97-.746-.744-4.25-2.348a.339.339 0 0 1-.08-.566l.573-.573a.909.909 0 0 1 .794-.211l6.39 1.736.02.006 2.286-2.286c.37-.372 1.621-1.02 1.993-.65.37.372-.279 1.622-.65 1.993z"/>
+                  </svg>
+                  <span>Tours</span>
+                </a>
+              </li>
+              <li class="tab3">
+                <a href="#tab3">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="25" viewBox="0 0 58.568 58.568">
+                    <path id="flight_plane" data-name="flight plane" d="M1023.994,672.006c2.4-3.218,3.843-6.559,3.85-8.946a3.323,3.323,0,0,0-.453-1.828,1.706,1.706,0,0,0-.578-.584,3.265,3.265,0,0,0-1.852-.466c-2.381,0-5.723,1.442-8.942,3.849a77.166,77.166,0,0,0-8.806,8.487q-.917.966-1.934,2.031l-6.976-2.091.02-.02a1.566,1.566,0,0,0-.005-2.2l-1.259-1.261a1.571,1.571,0,0,0-1.11-.461,1.541,1.541,0,0,0-1.1.458l-1.885,1.886-1-.3a1.563,1.563,0,0,0-.125-2.063l-1.266-1.265a1.568,1.568,0,0,0-1.109-.457,1.534,1.534,0,0,0-1.1.458l-1.73,1.73-7.094-2.125a1.775,1.775,0,0,0-.507-.072,1.875,1.875,0,0,0-1.311.531l-2.494,2.494a1.463,1.463,0,0,0-.439,1.029,1.433,1.433,0,0,0,.761,1.284l14.918,8.334a2.607,2.607,0,0,1,.362.275l4.253,4.252c-3.978,4.191-7.522,8.25-10.284,11.781-.258.328-.5.649-.742.965l-11.541-1.048a1.573,1.573,0,0,0-.2-.012,2.127,2.127,0,0,0-1.429.591l-1.163,1.161a1.449,1.449,0,0,0-.446,1.029,1.418,1.418,0,0,0,.839,1.3l8.119,3.857a1.843,1.843,0,0,1,.311.223l.674.668a4.938,4.938,0,0,0-.325,1.561,2.053,2.053,0,0,0,.567,1.5l.029.026.008.005a2.056,2.056,0,0,0,1.493.56,4.964,4.964,0,0,0,1.548-.322l.684.682a1.956,1.956,0,0,1,.212.3l3.848,8.1a1.435,1.435,0,0,0,1.294.851h.008a1.446,1.446,0,0,0,1.026-.432l1.192-1.2a2.132,2.132,0,0,0,.569-1.426c0-.066,0-.117-.005-.144l-1.051-11.581c.317-.238.636-.484.965-.739,3.536-2.766,7.6-6.313,11.779-10.286l4.256,4.26a2.314,2.314,0,0,1,.278.365l8.318,14.891a1.451,1.451,0,0,0,2.322.342l2.512-2.51a1.9,1.9,0,0,0,.514-1.31,1.769,1.769,0,0,0-.069-.491l-2.125-7.095,1.729-1.733a1.563,1.563,0,0,0,0-2.205l-1.268-1.267a1.559,1.559,0,0,0-2.062-.129l-.3-.995,1.887-1.886a1.577,1.577,0,0,0,.455-1.107,1.54,1.54,0,0,0-.455-1.1l-1.262-1.262a1.563,1.563,0,0,0-2.217,0l-.013.012-2.089-6.976q1.082-1.032,2.062-1.96C1019.32,677.193,1022.053,674.6,1023.994,672.006Z" transform="translate(-969.276 -660.182)"/>
+                  </svg>
+                  <span>Flight</span>
+                </a>
+              </li>
+            </ul> <!-- END tabs-nav -->
+            <div id="tabs-content" style="margin-top: -1px;">
+              <div id="tab1" class="tab-content">
+                <input type="text" class="search-input pl-3" style="width: 580px;" placeholder="Type Something " name="">
+                <input type="" class="search-input search-input1" name="datefilter" placeholder="Checkin - Checkout" value="" style="
+                width: 380px;text-align: center;margin-left: -4px;border-left: 1px solid !important;">
+                <input type="" class="search-input search-input1" name="" placeholder="Rooms" value="" style="
+                width: 280px;text-align: center;margin-left: -4px;border-left: 1px solid !important;">
+                <button type="submit" class="search-btn">Search</button>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" viewBox="0 0 256 256" xml:space="preserve">
+                  <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                    <path d="M 89.121 84.879 L 63.874 59.632 c 5.55 -6.535 8.583 -14.734 8.583 -23.403 c 0 -9.677 -3.769 -18.775 -10.611 -25.617 C 55.003 3.769 45.905 0 36.229 0 S 17.454 3.769 10.611 10.611 C 3.769 17.454 0 26.552 0 36.229 s 3.769 18.774 10.611 25.617 c 6.842 6.843 15.94 10.611 25.617 10.611 c 8.669 0 16.868 -3.033 23.403 -8.583 l 25.247 25.247 C 85.465 89.707 86.232 90 87 90 s 1.535 -0.293 2.121 -0.879 C 90.293 87.95 90.293 86.05 89.121 84.879 z M 14.854 57.604 c -11.786 -11.786 -11.786 -30.964 0 -42.75 c 5.893 -5.893 13.634 -8.839 21.375 -8.839 s 15.481 2.947 21.375 8.839 c 11.786 11.786 11.786 30.964 0 42.75 C 45.816 69.389 26.64 69.389 14.854 57.604 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                  </g>
+                </svg> -->
+              </div>
+              <div id="tab2" class="tab-content">
+                <h2>Tab 2</h2>
+              </div>
+              <div id="tab3" class="tab-content">
+                <h2>Tab 3</h2>
+              </div>
+            </div> <!-- END tabs-content -->
+          </div> <!-- END tabs -->
+          <div class="search-main">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 px-3" style="margin-top: 120px;">
+        <h1 class="text-center" style="font-size: 60px; font-weight: 900;">Why Choose us</h1>
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="margin-top: 60px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 24 24" fill="none">
+          <path d="M10 16V14.0003M10 14.0003V12M10 14.0003L12 14.0005M10 14.0003L8 14M21 12V11.2C21 10.0799 21 9.51984 20.782 9.09202C20.5903 8.71569 20.2843 8.40973 19.908 8.21799C19.4802 8 18.9201 8 17.8 8H3M21 12V16M21 12H19C17.8954 12 17 12.8954 17 14C17 15.1046 17.8954 16 19 16H21M21 16V16.8C21 17.9201 21 18.4802 20.782 18.908C20.5903 19.2843 20.2843 19.5903 19.908 19.782C19.4802 20 18.9201 20 17.8 20H6.2C5.0799 20 4.51984 20 4.09202 19.782C3.71569 19.5903 3.40973 19.2843 3.21799 18.908C3 18.4802 3 17.9201 3 16.8V8M18 8V7.2C18 6.0799 18 5.51984 17.782 5.09202C17.5903 4.71569 17.2843 4.40973 16.908 4.21799C16.4802 4 15.9201 4 14.8 4H6.2C5.07989 4 4.51984 4 4.09202 4.21799C3.71569 4.40973 3.40973 4.71569 3.21799 5.09202C3 5.51984 3 6.0799 3 7.2V8" stroke="#ff4d78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="ml-3">Hot offers for any bufgets</span>
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="margin-top: 60px;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ff4d78" width="70" version="1.1" id="Capa_1" viewBox="0 0 279.525 279.525" xml:space="preserve">
+          <g>
+            <path d="M165.066,1.544c-29.272,0-56.007,11.05-76.268,29.191c4.494,7.146,7.047,15.46,7.287,24.042l0.001,0.025l0.001,0.025   c0.102,3.867,0.333,7.735,0.664,11.597c15.368-21.117,40.258-34.88,68.315-34.88c46.571,0,84.459,37.888,84.459,84.459   c0,46.08-37.098,83.634-82.994,84.422c4.191,3.502,8.518,6.84,12.976,9.974l0.02,0.015l0.021,0.014   c6.07,4.282,11.014,9.896,14.483,16.317c49.133-12.861,85.493-57.633,85.493-110.742C279.525,52.89,228.18,1.544,165.066,1.544z"/>
+            <path d="M162.256,234.942c-13.076-10.438-21.234-17.389-32.909-28.204c-3.435-3.182-7.633-5.164-11.944-5.164   c-3.299,0-6.557,1.051-9.239,3.252c-2.768,2.33-5.536,4.66-8.305,6.989c-22.499-26.738-39.206-57.895-49.027-91.431   c3.472-1.016,6.945-2.033,10.417-3.049c7.652-2.343,11.252-10.512,10.129-18.701c-2.443-17.824-3.77-26.679-5.282-43.018   c-0.775-8.375-6.349-15.65-14.338-16.085c-1.246-0.121-2.491-0.181-3.726-0.181c-29.71,0-55.578,34.436-46.009,76.564   c11.907,52.172,37.684,100.243,74.551,139.031c15.102,15.856,33.603,23.036,50.312,23.036c17.627,0,33.261-7.984,40.833-22.195   C171.778,248.891,168.83,240.19,162.256,234.942z"/>
+            <path d="M130.645,118.121c-7.912,7.341-13.089,13.113-15.823,17.643c-1.93,3.195-3.338,6.573-4.187,10.04   c-0.399,1.632-0.032,3.326,1.007,4.649c1.038,1.321,2.596,2.079,4.276,2.079h37.758c4.626,0,8.39-3.764,8.39-8.39   c0-4.626-3.764-8.39-8.39-8.39h-17.051c0.139-0.164,0.282-0.328,0.428-0.493c1.114-1.254,3.842-3.874,8.107-7.785   c4.473-4.105,7.493-7.179,9.232-9.398c2.621-3.336,4.571-6.593,5.794-9.679c1.247-3.145,1.88-6.498,1.88-9.967   c0-6.224-2.254-11.507-6.699-15.705c-4.416-4.164-10.495-6.274-18.071-6.274c-6.884,0-12.731,1.802-17.377,5.356   c-2.803,2.146-4.961,5.119-6.415,8.839c-0.982,2.513-0.728,5.388,0.68,7.689c1.408,2.302,3.852,3.837,6.537,4.105   c0.299,0.03,0.597,0.045,0.891,0.045c3.779,0,7.149-2.403,8.387-5.979c0.388-1.121,0.901-2.012,1.527-2.65   c1.318-1.343,3.093-1.997,5.428-1.997c2.373,0,4.146,0.618,5.418,1.889c1.269,1.269,1.886,3.12,1.886,5.66   c0,2.359-0.843,4.819-2.505,7.314C140.862,108.028,138.199,111.083,130.645,118.121z"/>
+            <path d="M206.235,76.451h-6.307c-1.797,0-3.475,0.886-4.489,2.37l-29.168,42.698c-0.851,1.246-1.301,2.703-1.301,4.212v6.919   c0,2.997,2.439,5.436,5.436,5.436h23.945v5.787c0,4.775,3.885,8.66,8.66,8.66c4.775,0,8.66-3.885,8.66-8.66v-5.787h0.865   c4.437,0,8.047-3.61,8.047-8.047c0-4.437-3.61-8.047-8.047-8.047h-0.865V81.887C211.671,78.89,209.232,76.451,206.235,76.451z    M194.352,121.992h-10.748l10.748-15.978V121.992z"/>
+          </g>
+        </svg> 
+        <span class="ml-3">Round the clock support 7 days a week</span>
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="margin-top: 60px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 24 24" fill="none">
+          <path d="M5.5 15.5C5.5 14.5572 5.5 14.0858 5.79289 13.7929C6.08579 13.5 6.55719 13.5 7.5 13.5H8.5C9.44281 13.5 9.91421 13.5 10.2071 13.7929C10.5 14.0858 10.5 14.5572 10.5 15.5V16.5C10.5 17.4428 10.5 17.9142 10.2071 18.2071C9.91421 18.5 9.44281 18.5 8.5 18.5C7.08579 18.5 6.37868 18.5 5.93934 18.0607" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M5.5 8.5C5.5 7.08579 5.5 6.37868 5.93934 5.93934C6.37868 5.5 7.08579 5.5 8.5 5.5C9.44281 5.5 9.91421 5.5 10.2071 5.79289C10.5 6.08579 10.5 6.55719 10.5 7.5V8.5C10.5 9.44281 10.5 9.91421 10.2071 10.2071C9.91421 10.5 9.44281 10.5 8.5 10.5H7.5C6.55719 10.5 6.08579 10.5 5.79289 10.2071C5.5 9.91421 5.5 9.44281 5.5 8.5Z" stroke="#ff4d78" stroke-width="1.5"/>
+          <path d="M13.5 15.5C13.5 14.5572 13.5 14.0858 13.7929 13.7929C14.0858 13.5 14.5572 13.5 15.5 13.5H16.5C17.4428 13.5 17.9142 13.5 18.2071 13.7929C18.5 14.0858 18.5 14.5572 18.5 15.5C18.5 16.9142 18.5 17.6213 18.0607 18.0607C17.6213 18.5 16.9142 18.5 15.5 18.5C14.5572 18.5 14.0858 18.5 13.7929 18.2071C13.5 17.9142 13.5 17.4428 13.5 16.5V15.5Z" stroke="#ff4d78" stroke-width="1.5"/>
+          <path d="M18.5 8.5C18.5 9.44281 18.5 9.91421 18.2071 10.2071C17.9142 10.5 17.4428 10.5 16.5 10.5H15.5C14.5572 10.5 14.0858 10.5 13.7929 10.2071C13.5 9.91421 13.5 9.44281 13.5 8.5V7.5C13.5 6.55719 13.5 6.08579 13.7929 5.79289C14.0858 5.5 14.5572 5.5 15.5 5.5C16.9142 5.5 17.6213 5.5 18.0607 5.93934" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M22 14C22 14.3492 22 14.6822 21.9991 15M14 22C17.7712 22 19.6569 22 20.8284 20.8284C21.4816 20.1752 21.7706 19.3001 21.8985 18" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 22C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 2C6.22876 2 4.34315 2 3.17157 3.17157C2.51839 3.82475 2.22937 4.69989 2.10149 6M2 10C2 9.65081 2 9.31779 2.00093 9" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M14 2C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10" stroke="#ff4d78" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="ml-3">100,000 genuine reviews from our users</span>
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="">
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="70" viewBox="0 0 14 14" id="svg2">
+          <metadata id="metadata8">
+            <rdf:RDF>
+              <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title/>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <defs id="defs6"/>
+          <rect width="70" x="0" y="0" id="canvas" style="fill:none;stroke:none;visibility:hidden"/>
+          <path d="M 0.625,3 C 0.25,3 0,3.25 0,3.75 l 0,7.25 1.25,0 0,-1.75 c 0,0 10.380697,0.01892 11.5,0 L 12.75,11 14,11 14,8.625 14,4.75 C 14,4.4202582 13.86199,4 13.375,4 12.88801,4 12.75,4.4202582 12.75,4.75 l 0,3.25 -11.5,0 0,-4.25 C 1.25,3.25 1,3 0.625,3 z M 3.5,4 C 2.671573,4 2,4.671573 2,5.5 2,6.328427 2.671573,7 3.5,7 4.328427,7 5,6.328427 5,5.5 5,4.671573 4.328427,4 3.5,4 z m 2,1 0,2 6.5,0 C 12,6 10.963825,5 10,5 z" id="hotel" style="fill:#ff4d78;fill-opacity:1;stroke:none"/>
+        </svg>
+        <span class="ml-3">10,000 accommodation option</span>
+
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 24 24" fill="none" style="stroke-width: 2;">
+          <path d="M18.9771 5.02291L19.5074 4.49258V4.49258L18.9771 5.02291ZM18.9771 14.7904L19.5074 15.3207L18.9771 14.7904ZM7.14558 12.6684L6.61525 12.138L6.61525 12.138L7.14558 12.6684ZM3.43349 16.3804L3.96382 16.9108L3.96382 16.9108L3.43349 16.3804ZM7.61956 20.5665L7.08923 20.0362L7.08923 20.0362L7.61956 20.5665ZM11.3319 16.8541L10.8016 16.3238L11.3319 16.8541ZM3.00906 17.5904L2.26365 17.6732L3.00906 17.5904ZM3.24113 19.679L2.49572 19.7618L2.49572 19.7618L3.24113 19.679ZM4.32101 20.7589L4.23819 21.5043H4.23819L4.32101 20.7589ZM6.4096 20.9909L6.49242 20.2455H6.49242L6.4096 20.9909ZM3.52408 20.2677L4.05441 19.7374L4.05441 19.7374L3.52408 20.2677ZM3.73229 20.4759L3.20196 21.0062L3.20196 21.0063L3.73229 20.4759ZM7.40432 11.6311L6.67789 11.8177H6.67789L7.40432 11.6311ZM12.3689 16.5957L12.1823 17.3221L12.3689 16.5957ZM7.63832 17.063C7.34382 16.7717 6.86895 16.7743 6.57767 17.0688C6.2864 17.3633 6.28901 17.8382 6.58351 18.1294L7.63832 17.063ZM20.0119 8.20635C20.1258 8.60458 20.5411 8.83502 20.9393 8.72105C21.3375 8.60709 21.5679 8.19187 21.454 7.79365L20.0119 8.20635ZM21.3916 12.2267C21.5167 11.8318 21.2981 11.4103 20.9033 11.2851C20.5085 11.1599 20.0869 11.3785 19.9617 11.7733L21.3916 12.2267ZM13.1161 10.8839C12.628 10.3957 12.628 9.60427 13.1161 9.11612L12.0555 8.05546C10.9815 9.1294 10.9815 10.8706 12.0555 11.9445L13.1161 10.8839ZM14.8839 10.8839C14.3957 11.372 13.6043 11.372 13.1161 10.8839L12.0555 11.9445C13.1294 13.0185 14.8706 13.0185 15.9445 11.9445L14.8839 10.8839ZM14.8839 9.11612C15.372 9.60427 15.372 10.3957 14.8839 10.8839L15.9445 11.9445C17.0185 10.8706 17.0185 9.1294 15.9445 8.05546L14.8839 9.11612ZM15.9445 8.05546C14.8706 6.98151 13.1294 6.98151 12.0555 8.05546L13.1161 9.11612C13.6043 8.62796 14.3957 8.62796 14.8839 9.11612L15.9445 8.05546ZM19.5074 4.49258C16.5173 1.50247 11.6694 1.50247 8.67928 4.49258L9.73994 5.55324C12.1443 3.14892 16.0424 3.14892 18.4468 5.55324L19.5074 4.49258ZM6.61525 12.138L2.90316 15.8501L3.96382 16.9108L7.67591 13.1987L6.61525 12.138ZM8.14989 21.0968L9.39029 19.8564L8.32963 18.7958L7.08923 20.0362L8.14989 21.0968ZM9.39029 19.8564L11.8623 17.3845L10.8016 16.3238L8.32963 18.7958L9.39029 19.8564ZM2.26365 17.6732L2.49572 19.7618L3.98654 19.5962L3.75447 17.5076L2.26365 17.6732ZM4.23819 21.5043L6.32678 21.7364L6.49242 20.2455L4.40384 20.0135L4.23819 21.5043ZM2.99375 20.798L3.20196 21.0062L4.26263 19.9456L4.05441 19.7374L2.99375 20.798ZM4.40384 20.0135C4.35042 20.0075 4.30062 19.9836 4.26262 19.9456L3.20196 21.0063C3.48081 21.2851 3.84626 21.4607 4.23819 21.5043L4.40384 20.0135ZM2.49572 19.7618C2.53926 20.1537 2.7149 20.5192 2.99375 20.798L4.05441 19.7374C4.01641 19.6994 3.99248 19.6496 3.98654 19.5962L2.49572 19.7618ZM7.08923 20.0362C6.93242 20.193 6.71283 20.27 6.49242 20.2455L6.32678 21.7364C7.00007 21.8112 7.67087 21.5759 8.14989 21.0968L7.08923 20.0362ZM2.90316 15.8501C2.42414 16.3291 2.18884 16.9999 2.26365 17.6732L3.75447 17.5076C3.72999 17.2872 3.80701 17.0676 3.96382 16.9108L2.90316 15.8501ZM8.13075 11.4446C7.60655 9.4033 8.14412 7.14906 9.73994 5.55324L8.67928 4.49258C6.69321 6.47865 6.02725 9.28401 6.67789 11.8177L8.13075 11.4446ZM18.4468 14.2601C16.8509 15.8559 14.5967 16.3934 12.5554 15.8693L12.1823 17.3221C14.716 17.9728 17.5214 17.3068 19.5074 15.3207L18.4468 14.2601ZM11.8623 17.3845C11.9181 17.3287 12.0324 17.2836 12.1823 17.3221L12.5554 15.8693C11.9675 15.7183 11.2845 15.8409 10.8016 16.3238L11.8623 17.3845ZM7.67591 13.1987C8.15857 12.716 8.28182 12.0329 8.13075 11.4446L6.67789 11.8177C6.7163 11.9672 6.67127 12.082 6.61525 12.138L7.67591 13.1987ZM9.38736 18.7929L7.63832 17.063L6.58351 18.1294L8.33255 19.8593L9.38736 18.7929ZM18.4468 5.55324C19.213 6.3195 19.734 7.23555 20.0119 8.20635L21.454 7.79365C21.1079 6.58425 20.4583 5.4435 19.5074 4.49258L18.4468 5.55324ZM19.9617 11.7733C19.6735 12.6821 19.1692 13.5376 18.4468 14.2601L19.5074 15.3207C20.4038 14.4244 21.0325 13.3592 21.3916 12.2267L19.9617 11.7733Z" fill="#ff4d78"/>
+        </svg>
+        <span class="ml-3">Change your reservation at any time</span>
+      </div>
+      <div class="col-md-4 px-5 offers-sec py-4" style="">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="70" viewBox="0 0 24 24" id="hotel" data-name="Flat Line" class="icon flat-line"><path id="secondary" d="M19,3H5A1,1,0,0,0,4,4V21h6V15h4v6h6V4A1,1,0,0,0,19,3Z" style="stroke-width: 2;"/><path id="primary" d="M14,21V15H10v6ZM8,7h2M8,11h2m6-4H14m2,4H14m6,10H4V4A1,1,0,0,1,5,3H19a1,1,0,0,1,1,1Zm1,0H3" style="fill: none; stroke:#ff4d78; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/></svg>
+        <span class="ml-3">Registering your object on EETS</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 px-3" style="margin-top: 120px;">
+        <h1 class="text-center" style="font-size: 60px; font-weight: 900;">Best Offers</h1>
+      </div>
+      <div class="col-md-12 px-5 py-4" style="margin-top: 60px;">
+        <div class="main">
+          <div class="slider slider-nav">
+            <div class="slick-slide">
+              <div class="card" style="">
+                <img class="card-img-top" src="images/6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title font-weight-bold text-dark">Card title</h3>
+                  <p class="card-text text-dark">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="ratings mb-2">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-dark ml-3" style="font-size: 13px;">4.0 Star Hotel</span>
+                  </div>
+                  <div class="reviews mb-4 d-flex">
+                    <span class="dots ml-0"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="text-dark" style="font-size: 13px; margin-left: 28px;">8,5 Very Good 134 reviews</span>
+                  </div>
+                  <a href="#" class="btns">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="card" style="">
+                <img class="card-img-top" src="images/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title font-weight-bold text-dark">Card title</h3>
+                  <p class="card-text text-dark">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="ratings mb-2">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-dark ml-3" style="font-size: 13px;">4.0 Star Hotel</span>
+                  </div>
+                  <div class="reviews mb-4 d-flex">
+                    <span class="dots ml-0"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="text-dark" style="font-size: 13px; margin-left: 28px;">8,5 Very Good 134 reviews</span>
+                  </div>
+                  <a href="#" class="btns">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="card" style="">
+                <img class="card-img-top" src="images/2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title font-weight-bold text-dark">Card title</h3>
+                  <p class="card-text text-dark">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="ratings mb-2">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-dark ml-3" style="font-size: 13px;">4.0 Star Hotel</span>
+                  </div>
+                  <div class="reviews mb-4 d-flex">
+                    <span class="dots ml-0"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="text-dark" style="font-size: 13px; margin-left: 28px;">8,5 Very Good 134 reviews</span>
+                  </div>
+                  <a href="#" class="btns">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="card" style="">
+                <img class="card-img-top" src="images/4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title font-weight-bold text-dark">Card title</h3>
+                  <p class="card-text text-dark">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="ratings mb-2">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-dark ml-3" style="font-size: 13px;">4.0 Star Hotel</span>
+                  </div>
+                  <div class="reviews mb-4 d-flex">
+                    <span class="dots ml-0"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="text-dark" style="font-size: 13px; margin-left: 28px;">8,5 Very Good 134 reviews</span>
+                  </div>
+                  <a href="#" class="btns">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="card" style="">
+                <img class="card-img-top" src="images/5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title font-weight-bold text-dark">Card title</h3>
+                  <p class="card-text text-dark">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="ratings mb-2">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-dark ml-3" style="font-size: 13px;">4.0 Star Hotel</span>
+                  </div>
+                  <div class="reviews mb-4 d-flex">
+                    <span class="dots ml-0"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="text-dark" style="font-size: 13px; margin-left: 28px;">8,5 Very Good 134 reviews</span>
+                  </div>
+                  <a href="#" class="btns">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 px-3" style="margin-top: 120px;">
+        <h1 class="text-center" style="font-size: 60px; font-weight: 900;">Discover the exciting world of outside</h1>
+        <p class="text-center mt-5" style="font-size: 30px;">Sign up and we'll send the best deals to you</p>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center" style="margin-top: 60px;">
+        <div class="d-flex">
+          <input type="gmail" class="search-input search-inputds pl-4" style="width: 680px;border: 1px solid #ccc !important;" placeholder="Your E-mail" name="">
+          <button type="submit" class="search-btn">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer" style="margin-top: 120px; border-top: 1px solid #ccc;">  
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="logo">
+            <img style="width: 200px;" src="images/logo.png">
+          </div>
+          <div class="mt-2 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" viewBox="0 0 256 256" xml:space="preserve">
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                <path d="M 0 11.755 v 66.489 h 90 V 11.755 H 0 z M 45 50.49 L 7.138 15.755 h 75.724 L 45 50.49 z M 33.099 45 L 4 71.695 V 18.304 L 33.099 45 z M 36.058 47.714 L 45 55.918 l 8.943 -8.204 l 28.919 26.53 H 7.138 L 36.058 47.714 z M 56.901 45 L 86 18.304 v 53.392 L 56.901 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              </g>
+            </svg>
+            <span class="ml-3">
+              E-mail:eets@gmail.com
+            </span>
+          </div>
+          <div class="mt-3 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" viewBox="0 0 256 256" xml:space="preserve">
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                <path d="M 16.639 2.864 c 0.071 0 0.142 0.001 0.215 0.003 c 0.131 0.003 0.261 0.011 0.388 0.019 c 0.171 0.011 0.342 0.024 0.513 0.044 c 0.137 0.016 0.273 0.038 0.409 0.059 c 0.162 0.026 0.323 0.051 0.487 0.086 c 0.129 0.027 0.255 0.061 0.425 0.104 l 0.056 0.015 c 0.133 0.034 0.266 0.067 0.398 0.108 c 0.123 0.038 0.244 0.084 0.366 0.128 l 0.076 0.028 l 0.124 0.045 c 0.098 0.035 0.197 0.07 0.294 0.11 c 0.122 0.051 0.242 0.11 0.362 0.168 l 0.094 0.045 l 0.165 0.078 c 0.072 0.034 0.144 0.066 0.215 0.104 c 0.125 0.067 0.246 0.143 0.368 0.217 l 0.099 0.061 l 0.192 0.115 c 0.047 0.028 0.096 0.054 0.143 0.086 c 0.153 0.102 0.3 0.217 0.447 0.33 l 0.054 0.041 c 0.067 0.051 0.135 0.101 0.203 0.15 l 0.059 0.042 c 0.257 0.21 0.499 0.429 0.72 0.649 l 8.159 8.159 c 0.221 0.221 0.439 0.463 0.641 0.709 l 0.053 0.072 c 0.049 0.068 0.098 0.135 0.149 0.202 l 0.046 0.061 c 0.111 0.145 0.223 0.288 0.324 0.44 c 0.032 0.048 0.059 0.098 0.088 0.147 l 0.112 0.188 l 0.063 0.103 c 0.074 0.12 0.149 0.24 0.215 0.365 c 0.038 0.071 0.071 0.144 0.104 0.216 l 0.077 0.163 l 0.046 0.096 c 0.057 0.119 0.116 0.238 0.167 0.36 c 0.04 0.095 0.073 0.192 0.108 0.289 l 0.046 0.127 l 0.028 0.076 c 0.045 0.122 0.09 0.244 0.129 0.37 c 0.04 0.128 0.072 0.258 0.105 0.388 l 0.024 0.095 c 0.034 0.132 0.069 0.264 0.098 0.399 c 0.034 0.159 0.059 0.319 0.084 0.48 c 0.022 0.138 0.044 0.275 0.06 0.415 c 0.02 0.17 0.032 0.34 0.043 0.509 c 0.008 0.13 0.016 0.259 0.019 0.389 c 0.004 0.179 0.003 0.358 -0.002 0.536 c -0.004 0.121 -0.009 0.242 -0.017 0.364 c -0.012 0.187 -0.03 0.373 -0.052 0.555 c -0.014 0.111 -0.03 0.222 -0.048 0.334 c -0.031 0.194 -0.065 0.386 -0.107 0.577 c -0.02 0.09 -0.043 0.178 -0.073 0.297 c -0.05 0.199 -0.104 0.398 -0.166 0.593 c -0.016 0.051 -0.035 0.101 -0.053 0.152 l -0.038 0.106 c -0.072 0.204 -0.146 0.407 -0.231 0.605 l -0.037 0.079 l -0.064 0.137 c -0.096 0.209 -0.194 0.416 -0.316 0.637 l -0.087 0.148 c -0.145 0.253 -0.259 0.439 -0.365 0.597 c -0.034 0.045 -0.067 0.09 -0.099 0.135 c -0.186 0.266 -0.343 0.474 -0.494 0.654 c -0.229 0.274 -0.408 0.473 -0.58 0.645 l -5.52 5.52 c -1.876 1.876 -1.876 4.927 0 6.803 l 23.86 23.86 c 0.909 0.909 2.117 1.409 3.402 1.409 c 1.285 0 2.493 -0.5 3.402 -1.409 l 5.52 -5.52 c 0.172 -0.172 0.371 -0.351 0.645 -0.581 c 0.181 -0.151 0.389 -0.309 0.654 -0.495 c 0.043 -0.03 0.085 -0.061 0.133 -0.097 c 0.16 -0.108 0.348 -0.223 0.604 -0.37 l 0.158 -0.095 c 0.204 -0.112 0.413 -0.21 0.624 -0.307 l 0.135 -0.063 l 0.074 -0.035 c 0.201 -0.086 0.405 -0.161 0.613 -0.234 l 0.106 -0.038 c 0.048 -0.017 0.096 -0.035 0.145 -0.051 c 0.198 -0.063 0.397 -0.117 0.629 -0.176 c 0.087 -0.022 0.174 -0.045 0.262 -0.064 c 0.193 -0.042 0.386 -0.077 0.583 -0.108 c 0.109 -0.017 0.218 -0.034 0.326 -0.047 c 0.187 -0.023 0.373 -0.04 0.565 -0.053 c 0.119 -0.008 0.239 -0.013 0.357 -0.017 c 0.108 -0.003 0.216 -0.005 0.325 -0.005 c 0.071 0 0.142 0.001 0.214 0.003 c 0.13 0.003 0.26 0.011 0.388 0.019 c 0.171 0.011 0.341 0.024 0.513 0.044 c 0.137 0.016 0.273 0.038 0.409 0.059 c 0.162 0.026 0.323 0.051 0.486 0.086 c 0.128 0.027 0.255 0.061 0.425 0.104 l 0.056 0.014 c 0.133 0.034 0.266 0.067 0.398 0.108 c 0.123 0.038 0.244 0.084 0.366 0.128 l 0.076 0.028 l 0.124 0.045 c 0.098 0.035 0.197 0.07 0.295 0.11 c 0.122 0.051 0.241 0.11 0.361 0.167 l 0.095 0.045 l 0.165 0.078 c 0.072 0.034 0.144 0.066 0.215 0.104 c 0.125 0.067 0.246 0.143 0.368 0.217 l 0.099 0.061 l 0.192 0.115 c 0.047 0.028 0.096 0.054 0.143 0.086 c 0.153 0.102 0.3 0.217 0.448 0.33 l 0.054 0.041 c 0.067 0.051 0.135 0.101 0.203 0.15 l 0.059 0.042 c 0.257 0.21 0.499 0.429 0.72 0.649 l 8.159 8.159 c 0.221 0.221 0.439 0.463 0.641 0.709 l 0.053 0.072 c 0.049 0.068 0.098 0.135 0.149 0.202 l 0.045 0.06 c 0.111 0.145 0.224 0.289 0.325 0.441 c 0.032 0.048 0.059 0.098 0.088 0.147 l 0.112 0.188 l 0.063 0.103 c 0.074 0.12 0.149 0.24 0.215 0.365 c 0.038 0.071 0.071 0.144 0.105 0.216 l 0.077 0.163 l 0.047 0.097 c 0.057 0.119 0.115 0.237 0.166 0.358 c 0.04 0.095 0.073 0.192 0.108 0.288 l 0.046 0.127 l 0.028 0.078 c 0.044 0.122 0.09 0.243 0.129 0.368 c 0.04 0.128 0.072 0.257 0.105 0.386 l 0.024 0.095 c 0.034 0.133 0.069 0.265 0.098 0.401 c 0.034 0.159 0.059 0.319 0.084 0.479 c 0.022 0.138 0.044 0.275 0.06 0.415 c 0.02 0.17 0.032 0.34 0.043 0.509 c 0.008 0.129 0.016 0.259 0.019 0.389 c 0.004 0.179 0.003 0.358 -0.002 0.535 c -0.004 0.121 -0.009 0.242 -0.017 0.364 c -0.012 0.187 -0.03 0.373 -0.052 0.555 c -0.014 0.111 -0.03 0.222 -0.048 0.334 c -0.031 0.194 -0.065 0.386 -0.107 0.577 c -0.02 0.09 -0.043 0.178 -0.073 0.297 c -0.05 0.2 -0.104 0.398 -0.166 0.593 c -0.016 0.051 -0.035 0.102 -0.053 0.152 l -0.038 0.106 c -0.072 0.204 -0.146 0.407 -0.231 0.605 l -0.037 0.079 l -0.064 0.137 c -0.096 0.209 -0.194 0.416 -0.316 0.637 l -0.087 0.148 c -0.145 0.253 -0.259 0.439 -0.365 0.597 c -0.034 0.045 -0.067 0.09 -0.099 0.135 c -0.186 0.266 -0.343 0.474 -0.494 0.653 c -0.229 0.274 -0.408 0.473 -0.58 0.645 l -0.026 0.026 l -0.026 0.027 c -3.996 4.199 -10.029 6.512 -16.988 6.512 c -12.981 0 -27.91 -7.839 -42.053 -22.089 C 10.839 50.511 3 35.464 3.138 22.403 C 3.21 15.59 5.522 9.675 9.649 5.749 l 0.027 -0.026 l 0.026 -0.026 c 0.172 -0.172 0.371 -0.351 0.645 -0.581 c 0.181 -0.151 0.389 -0.309 0.655 -0.495 c 0.043 -0.03 0.085 -0.061 0.133 -0.097 c 0.16 -0.108 0.348 -0.223 0.605 -0.37 l 0.158 -0.095 c 0.204 -0.112 0.413 -0.21 0.624 -0.307 l 0.135 -0.063 l 0.074 -0.035 c 0.201 -0.086 0.406 -0.161 0.613 -0.234 l 0.106 -0.038 c 0.049 -0.017 0.097 -0.035 0.145 -0.051 c 0.198 -0.063 0.397 -0.117 0.629 -0.176 c 0.087 -0.022 0.174 -0.045 0.262 -0.064 c 0.193 -0.042 0.386 -0.077 0.583 -0.108 c 0.109 -0.017 0.218 -0.034 0.325 -0.047 c 0.187 -0.023 0.373 -0.04 0.565 -0.053 c 0.119 -0.008 0.239 -0.013 0.357 -0.017 C 16.423 2.865 16.531 2.864 16.639 2.864 M 16.639 -0.136 c -0.138 0 -0.275 0.002 -0.413 0.006 c -0.157 0.005 -0.313 0.012 -0.469 0.022 c -0.244 0.016 -0.488 0.039 -0.731 0.069 C 14.883 -0.021 14.741 0 14.599 0.022 c -0.254 0.04 -0.506 0.086 -0.758 0.141 c -0.128 0.028 -0.255 0.061 -0.382 0.093 c -0.262 0.066 -0.522 0.137 -0.781 0.22 c -0.111 0.036 -0.221 0.077 -0.331 0.115 c -0.269 0.095 -0.536 0.194 -0.8 0.307 c -0.093 0.04 -0.184 0.085 -0.276 0.128 c -0.275 0.126 -0.548 0.257 -0.815 0.403 c -0.072 0.04 -0.142 0.084 -0.213 0.126 c -0.282 0.162 -0.56 0.329 -0.831 0.514 c -0.044 0.03 -0.086 0.065 -0.13 0.095 C 8.989 2.369 8.701 2.582 8.423 2.815 l 0 0 c -0.288 0.241 -0.572 0.49 -0.842 0.76 C -3.732 14.34 -4.744 39.272 23.096 66.904 c 16.498 16.622 32.035 22.96 44.167 22.96 c 8.188 0 14.824 -2.886 19.162 -7.444 c 0.27 -0.27 0.52 -0.554 0.76 -0.842 c 0 0 0 0 0 0 c 0.232 -0.277 0.444 -0.564 0.649 -0.855 c 0.032 -0.045 0.067 -0.088 0.098 -0.134 c 0.184 -0.27 0.35 -0.547 0.511 -0.827 c 0.042 -0.073 0.088 -0.144 0.128 -0.218 c 0.146 -0.266 0.276 -0.537 0.401 -0.811 c 0.043 -0.094 0.089 -0.186 0.13 -0.28 c 0.113 -0.262 0.211 -0.528 0.305 -0.796 c 0.039 -0.112 0.081 -0.223 0.117 -0.336 c 0.082 -0.257 0.153 -0.516 0.219 -0.777 c 0.033 -0.129 0.065 -0.257 0.094 -0.386 c 0.055 -0.25 0.1 -0.501 0.14 -0.754 c 0.023 -0.144 0.044 -0.287 0.062 -0.432 c 0.03 -0.242 0.052 -0.484 0.068 -0.727 c 0.01 -0.158 0.018 -0.315 0.022 -0.473 c 0.007 -0.233 0.008 -0.465 0.003 -0.698 c -0.004 -0.169 -0.013 -0.338 -0.024 -0.507 c -0.014 -0.222 -0.031 -0.444 -0.057 -0.665 c -0.021 -0.18 -0.049 -0.359 -0.077 -0.539 c -0.033 -0.21 -0.067 -0.419 -0.111 -0.627 c -0.04 -0.189 -0.089 -0.376 -0.137 -0.564 c -0.051 -0.197 -0.1 -0.393 -0.161 -0.587 c -0.061 -0.196 -0.133 -0.389 -0.203 -0.583 c -0.066 -0.182 -0.129 -0.365 -0.204 -0.545 c -0.084 -0.202 -0.181 -0.398 -0.276 -0.596 c -0.08 -0.167 -0.154 -0.335 -0.242 -0.498 c -0.111 -0.209 -0.238 -0.41 -0.361 -0.614 c -0.089 -0.146 -0.171 -0.296 -0.267 -0.439 c -0.15 -0.225 -0.317 -0.441 -0.483 -0.658 c -0.087 -0.114 -0.165 -0.232 -0.256 -0.343 c -0.265 -0.324 -0.548 -0.639 -0.85 -0.941 l -8.159 -8.159 c -0.302 -0.302 -0.617 -0.584 -0.941 -0.85 c -0.111 -0.091 -0.228 -0.168 -0.341 -0.255 c -0.218 -0.166 -0.434 -0.334 -0.66 -0.484 c -0.143 -0.095 -0.291 -0.176 -0.437 -0.265 c -0.204 -0.124 -0.406 -0.251 -0.615 -0.362 c -0.163 -0.087 -0.331 -0.162 -0.497 -0.241 c -0.198 -0.095 -0.396 -0.192 -0.598 -0.276 c -0.18 -0.075 -0.364 -0.138 -0.547 -0.205 c -0.193 -0.07 -0.384 -0.141 -0.58 -0.202 c -0.196 -0.061 -0.394 -0.111 -0.592 -0.162 c -0.186 -0.048 -0.372 -0.096 -0.559 -0.136 c -0.21 -0.044 -0.42 -0.079 -0.631 -0.112 c -0.178 -0.028 -0.356 -0.056 -0.535 -0.077 c -0.222 -0.026 -0.444 -0.043 -0.667 -0.057 c -0.169 -0.011 -0.337 -0.02 -0.506 -0.024 c -0.096 -0.002 -0.192 -0.003 -0.287 -0.003 c -0.138 0 -0.275 0.002 -0.413 0.006 c -0.157 0.005 -0.313 0.012 -0.469 0.022 c -0.244 0.016 -0.488 0.039 -0.731 0.069 c -0.143 0.018 -0.285 0.039 -0.428 0.061 c -0.254 0.04 -0.506 0.086 -0.758 0.141 c -0.128 0.028 -0.255 0.061 -0.382 0.093 c -0.262 0.066 -0.522 0.137 -0.781 0.22 c -0.111 0.036 -0.221 0.077 -0.331 0.115 c -0.269 0.095 -0.536 0.194 -0.8 0.307 c -0.093 0.04 -0.184 0.085 -0.276 0.128 c -0.275 0.126 -0.548 0.257 -0.815 0.403 c -0.072 0.04 -0.142 0.084 -0.213 0.126 c -0.282 0.162 -0.56 0.329 -0.831 0.514 c -0.044 0.03 -0.086 0.065 -0.13 0.095 c -0.293 0.205 -0.581 0.418 -0.859 0.651 l 0 0 c -0.288 0.241 -0.572 0.49 -0.842 0.76 l -5.52 5.52 c -0.354 0.354 -0.817 0.53 -1.28 0.53 c -0.463 0 -0.927 -0.177 -1.28 -0.53 L 28.272 37.867 c -0.707 -0.707 -0.707 -1.854 0 -2.561 l 5.52 -5.52 c 0.27 -0.27 0.52 -0.554 0.761 -0.842 c 0 0 0 0 0 0 c 0.232 -0.277 0.444 -0.564 0.649 -0.855 c 0.032 -0.045 0.067 -0.088 0.098 -0.134 c 0.184 -0.27 0.35 -0.547 0.511 -0.827 c 0.042 -0.073 0.088 -0.144 0.128 -0.218 c 0.146 -0.266 0.276 -0.537 0.401 -0.811 c 0.043 -0.094 0.089 -0.186 0.13 -0.28 c 0.113 -0.262 0.211 -0.528 0.305 -0.796 c 0.039 -0.112 0.081 -0.223 0.117 -0.336 c 0.082 -0.257 0.153 -0.516 0.219 -0.777 c 0.033 -0.129 0.065 -0.257 0.094 -0.386 c 0.055 -0.25 0.1 -0.501 0.14 -0.754 c 0.023 -0.144 0.044 -0.287 0.062 -0.432 c 0.03 -0.242 0.052 -0.484 0.068 -0.727 c 0.011 -0.158 0.018 -0.315 0.022 -0.473 c 0.007 -0.233 0.008 -0.465 0.003 -0.698 c -0.004 -0.169 -0.013 -0.338 -0.024 -0.507 c -0.014 -0.222 -0.031 -0.444 -0.057 -0.665 c -0.021 -0.18 -0.049 -0.359 -0.077 -0.539 c -0.033 -0.21 -0.068 -0.419 -0.111 -0.627 c -0.04 -0.189 -0.089 -0.376 -0.137 -0.564 c -0.051 -0.197 -0.1 -0.393 -0.161 -0.587 c -0.061 -0.196 -0.133 -0.389 -0.203 -0.583 c -0.066 -0.182 -0.129 -0.365 -0.204 -0.545 c -0.084 -0.202 -0.181 -0.398 -0.276 -0.596 c -0.08 -0.167 -0.154 -0.335 -0.242 -0.498 c -0.111 -0.209 -0.238 -0.41 -0.361 -0.614 c -0.089 -0.146 -0.171 -0.296 -0.267 -0.439 c -0.15 -0.225 -0.317 -0.441 -0.483 -0.658 c -0.087 -0.114 -0.165 -0.232 -0.256 -0.343 c -0.265 -0.324 -0.548 -0.639 -0.85 -0.941 l -8.159 -8.159 c -0.302 -0.302 -0.617 -0.584 -0.941 -0.85 c -0.111 -0.091 -0.228 -0.168 -0.342 -0.255 c -0.218 -0.166 -0.434 -0.334 -0.66 -0.484 c -0.143 -0.095 -0.291 -0.176 -0.437 -0.265 c -0.204 -0.124 -0.406 -0.251 -0.615 -0.362 c -0.163 -0.087 -0.331 -0.162 -0.497 -0.241 c -0.198 -0.095 -0.396 -0.192 -0.598 -0.276 c -0.18 -0.075 -0.364 -0.138 -0.547 -0.205 c -0.193 -0.07 -0.384 -0.141 -0.58 -0.202 c -0.196 -0.061 -0.394 -0.111 -0.592 -0.162 c -0.186 -0.048 -0.372 -0.096 -0.559 -0.136 c -0.21 -0.044 -0.42 -0.079 -0.631 -0.112 c -0.178 -0.028 -0.356 -0.056 -0.535 -0.077 c -0.222 -0.026 -0.444 -0.043 -0.667 -0.057 c -0.169 -0.011 -0.337 -0.02 -0.506 -0.024 C 16.831 -0.135 16.735 -0.136 16.639 -0.136 L 16.639 -0.136 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              </g>
+            </svg>
+            <span class="ml-3">
+              +78955 55654 4666
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="mt-3">Company</h3>
+          <ul class="list-unstyled">
+            <li class="mt-4"><a href="">About EETS</a></li>
+            <li class="mt-3"><a href="">Customer Service</a></li>
+            <li class="mt-3"><a href="">Careers</a></li>
+            <li class="mt-3"><a href="">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="mt-3">Discover</h3>
+          <ul class="list-unstyled">
+            <li class="mt-4"><a href="">Hotels</a></li>
+            <li class="mt-3"><a href="">Tours</a></li>
+            <li class="mt-3"><a href="">Flight</a></li>
+            <li class="mt-3"><a href="">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3 class="mt-3">Users</h3>
+          <ul class="list-unstyled">
+            <li class="mt-4"><a href="">FAQuestions</a></li>
+            <li class="mt-3"><a href="">Help center</a></li>
+            <li class="mt-3"><a href="">Add your hotel</a></li>
+            <li class="mt-3"><a href="">My Bookings</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1 mt-3">
+          <div>
+            <select style="width: 100px;border: navajowhite;box-shadow: 0px 0px 5px 0px #ccc;height: 40px; padding: 0px 10px;">
+              <option>English</option>
+              <option>Polski</option>
+              <option>中文</option>
+              <option>日本語</option>
+              <option>Deutsch</option>
+              <option>Français</option>
+              <option>Español</option>
+              <option>Русский</option>
+              <option>Português</option>
+            </select>
+          </div>
+          <div class="mt-3">
+            <select style="width: 100px;border: navajowhite;box-shadow: 0px 0px 5px 0px #ccc;height: 40px; padding: 0px 10px;">
+              <option>USD</option>
+              <option>XBT</option>
+              <option>EUR</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pb-5">
+        <div class="col-md-3">
+          © 2018 EETS, All rights reserved.
+        </div>
+        <div class="col-md-3">
+          <a href="" class="">
+            Terms & Conditions
+          </a>
+          <a href="" class="ml-5">
+            Privacy and Cookies
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="" class="">
+            Sitemap
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/f5eb8f10bc.js" crossorigin="anonymous"></script>
+</body>
+</html>
